@@ -1,0 +1,138 @@
+/* Reset some default browser styles */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .B1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .card-details-page {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+   
+  }
+  
+  .details-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .details-category {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .details-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .details-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .details-price,
+  .details-duration,
+  .details-language {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Add some hover effects */
+  .card-details-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .card-details-page h1:hover {
+    color: #007BFF;
+  }
+  
+  .details-info div:hover {
+    color: #007BFF;
+  }
+  .back-btn{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /* background-color: #007BFF; */
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .card-details-page {
+      width: 80%;
+    }
+  
+    .details-info {
+      flex-direction: column;
+    }
+  
+    .details-info div {
+      margin-bottom: 10px;
+    }
+  
+    .back-btn {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Media query for mobile phones (screen width up to 480px) */
+  @media only screen and (max-width: 480px) {
+    .card-details-page {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .details-category {
+      font-size: 1rem;
+    }
+  
+    .details-description {
+      font-size: 0.9rem;
+    }
+  
+    .details-info div {
+      font-size: 0.9rem;
+    }
+  
+    .back-btn {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .back-btn button {
+      width: 100%;
+    }
+  }
+  

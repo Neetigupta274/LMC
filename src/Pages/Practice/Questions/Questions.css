@@ -1,0 +1,111 @@
+#QuestionsContainer
+{
+    min-width: 100vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 2rem 4rem;
+}
+
+.QuestionCard
+{
+
+    background-color: hsl(63, 7%, 52%);
+    color: black;
+    position: relative;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 8px 10px rgb(77, 81, 57);
+
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+
+.QuestionCard div
+{
+
+    display: flex;
+    column-gap: 1rem;
+    position: relative;
+    left: 5rem;
+    margin-top: 4rem;
+}
+
+.QuestionCard h2
+{
+
+    position: absolute;
+    left: 4rem;
+    font-weight: 400;
+    color: rgb(55, 54, 54);
+    width: 85%;
+    text-align: left;
+}
+.QuestionCard h3
+{
+    position: absolute;
+    
+}
+.QuestionCard button
+{
+    position: absolute;
+    right: 1rem;
+
+    border: none;
+    background-color: rgb(63, 78, 239);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #QuestionsContainer {
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .QuestionCard {
+      /* width: 250px; */
+      padding: 15px;
+    }
+  
+    .QuestionCard h2 {
+      font-size: 1.1rem;
+    }
+  
+    .QuestionCard button {
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Media query for mobile phones (screen width up to 480px) */
+  @media only screen and (max-width: 480px) {
+    #QuestionsContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+
+      margin-left: -60px;
+    }
+  
+    .QuestionCard {
+      width: 50%;
+      padding: 10px;
+    }
+  
+    .QuestionCard h2 {
+      font-size: 1rem;
+    }
+  
+    .QuestionCard button {
+      padding: 6px 12px;
+    }
+  }

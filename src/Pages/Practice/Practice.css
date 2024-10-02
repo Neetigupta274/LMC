@@ -1,0 +1,73 @@
+
+
+
+
+
+
+#PracticeNavBar
+{
+    background-color: rgb(117, 164, 154);
+    color: rgb(25, 23, 23);
+    box-shadow: 0px 5px 6px rgb(43, 37, 37);
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 200px;
+    flex-direction: column;
+    
+  
+    
+}
+
+#PracticeNavBar ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.5rem;
+    margin-top: 50px;
+    font-size: 25px;
+    /* color: white; */
+    
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #PracticeNavBar {
+      width: 80%;
+    }
+  
+    #PracticeNavBar a {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Media query for mobile phones (screen width up to 480px) */
+  @media only screen and (max-width: 480px) {
+    #PracticeNavBar {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    #PracticeNavBar a {
+      font-size: 1rem;
+    }
+  
+    #PracticeNavBar ul {
+      padding: 10px;
+    }
+  
+    #PracticeNavBar li {
+      margin: 5px 0;
+    }
+  }
+
